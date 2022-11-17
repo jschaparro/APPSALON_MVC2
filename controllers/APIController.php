@@ -33,7 +33,11 @@ class APIController{
         }
         
         
-        echo json_encode(['resultado' => $resultado]);
+        // Retornamos una respuesta
+        $respuesta = [
+            'servicios' => $resultado
+        ];
+        echo json_encode($respuesta);
     }
 
 
