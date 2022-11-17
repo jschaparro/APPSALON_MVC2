@@ -32,12 +32,13 @@ class APIController{
             $citaServicio -> guardar();
         }
         
+        echo json_encode(['resultado' => $resultado]);
         
-        // Retornamos una respuesta
-        $respuesta = [
-            'servicios' => $resultado
-        ];
-        echo json_encode($respuesta, JSON_UNESCAPED_UNICODE);
+        // // Retornamos una respuesta
+        // $respuesta = [
+        //     'servicios' => $resultado
+        // ];
+        // echo json_encode($respuesta, JSON_UNESCAPED_UNICODE);
     }
 
 
